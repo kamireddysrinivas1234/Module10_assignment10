@@ -1,0 +1,22 @@
+
+<!doctype html><html><head><meta charset="utf-8"/>
+<title>FastAPI Calculator + Users</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='14'>🧮</text></svg>">
+<style>body{font-family:system-ui,Arial,sans-serif;margin:2rem}.card{max-width:720px;padding:1rem;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.1)}input,select,button{padding:.6rem;font-size:1rem;margin:.3rem 0;width:100%}.row{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}.muted{color:#666;font-size:.9rem}pre{background:#f7f7f7;padding:.6rem;border-radius:6px}</style>
+</head><body>
+<div class="card"><h2>FastAPI Calculator + Users</h2>
+  <div class="row"><input id="a" type="number" step="any" placeholder="First number">
+  <input id="b" type="number" step="any" placeholder="Second number"></div>
+  <select id="op"><option value="add">Add (+)</option><option value="sub">Subtract (−)</option>
+  <option value="mul">Multiply (×)</option><option value="div">Divide (÷)</option></select>
+  <button id="btn">Calculate</button>
+  <p class="muted">Result: <strong id="result">—</strong></p>
+  <hr>
+  <h3>Create user (demo)</h3>
+  <div class="row"><input id="u_username" placeholder="username"><input id="u_email" placeholder="email"></div>
+  <input id="u_password" type="password" placeholder="password">
+  <button id="u_btn">Create</button>
+  <pre id="u_out">[]</pre>
+  <p class="muted">API: POST <code>/api/calc</code>, POST <code>/api/users</code>, GET <code>/api/users</code></p>
+</div><script src="/static/app.js"></script></body></html>
